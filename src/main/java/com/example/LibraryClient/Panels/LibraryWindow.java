@@ -35,6 +35,12 @@ public class LibraryWindow {
                 AddBookWindow addBookWindow = new AddBookWindow();
             }
         });
+        addStockButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                StockWindow stockWindow = new StockWindow();
+            }
+        });
     }
 
 
