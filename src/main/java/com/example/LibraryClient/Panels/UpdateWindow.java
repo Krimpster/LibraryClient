@@ -38,7 +38,7 @@ public class UpdateWindow {
                 try{
                     int id = bookList.get(bookJList.getSelectedIndex()).getId();
                     String urlParams = "?id=" + id + "?title=" + titleTextField.getText() + "?author="
-                            + authorTextField.getText() + "?pageCount=" + pageTextField.getText() + "?loaned="
+                            + authorTextField.getText() + "?pagecount=" + pageTextField.getText() + "?loaned="
                             + loanedTextField.getText() + "?loanee=" + loaneeTextField.getText();
 
                     URL url = new URL("http://localhost:8080/book/updateBook" + urlParams);

@@ -1,7 +1,7 @@
 package com.example.LibraryClient.Objects;
 
 public class Book {
-    private int id;
+    private Integer id;
 
     private String title;
 
@@ -23,7 +23,7 @@ public class Book {
 
     @Override
     public String toString(){
-        return "ID: " + id + "Title: " + title + "Loaned: " + loaned;
+        return "ID: " + id + "    " + "Title: " + title + "    " + "Loaned: " + loaned;
      }
 
     public int getId() {

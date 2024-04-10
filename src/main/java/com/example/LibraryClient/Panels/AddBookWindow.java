@@ -29,10 +29,8 @@ public class AddBookWindow {
             public void actionPerformed(ActionEvent e) {
                 try{
                     String urlParams ="?title=" + titleTextField.getText() + "?author="
-                            + pageTextField.getText() + "?pageCount=" + stockTextField.getText();
-                    //System.out.println("http://localhost:8080/book/add" + urlParams);
-
-                    URL url = new URL("http://localhost:8080/book/add" + urlParams);
+                            + pageTextField.getText() + "?pagecount=" + Integer.parseInt(stockTextField.getText());
+                    URL url = new URL("http://localhost:8080/book/add" + urlParams.replace(" ", "%20"));
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("POST");
                     connection.connect();
