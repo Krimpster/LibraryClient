@@ -26,6 +26,11 @@ public class Book {
         return "ID: " + id + "    " + "Title: " + title + "    " + "Loaned: " + loaned;
      }
 
+    public String fullToString(){
+        return "ID: " + id + "    " + "Title: " + title + "    " + "Author: " + author + "    "
+                + "Page count: " + pageCount + "    " + "Loaned: " + loaned + "    " + "Loaner: " + loanee;
+    }
+
     public int getId() {
         return id;
     }
